@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #aeb9ca;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+/* MAIN */
+
+.event-details {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px 100px;
+}
+
+/* EVENT HERO */
+
+.event-hero {
+    position: relative;
+
+    padding: 70px 60px;
+
+    border: 1px solid rgba(0, 212, 255, 0.2);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0b1024,
+            #070b19
+        );
+
+    overflow: hidden;
+}
+
+.event-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: #0066ff;
+
+    filter: blur(150px);
+
+    opacity: 0.18;
+
+    right: -100px;
+    top: -100px;
+}
+
+.event-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+}
+
+#eventCategory {
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+}
+
+#eventTitle {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(40px, 6vw, 70px);
+
+    line-height: 1.15;
+
+    margin: 20px 0;
+}
+
+#eventDescription {
+    color: #9aa8bd;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+}
+
+/* EVENT META */
+
+.event-meta {
+    display: flex;
+
+    gap: 20px;
+
+    margin: 40px 0;
+
+    flex-wrap: wrap;
+}
+
+.event-meta div {
+    min-width: 180px;
+
+    padding: 18px 20px;
+
+    border: 1px solid rgba(0, 212, 255, 0.15);
+
+    border-radius: 10px;
+
+    background: rgba(5, 8, 22, 0.6);
+}
+
+.event-meta small {
+    display: block;
+
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.event-meta strong {
+    color: #dbe5f2;
+
+    font-size: 13px;
+
+    font-weight: 400;
+}
+
+/* REGISTER BUTTON */
+
+.register-btn {
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #00d4ff
+        );
+
+    color: white;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 30px rgba(0, 212, 255, 0.4);
+}
+
+/* ABOUT */
+
+.about-event {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 100px auto 70px;
+}
+
+.section-tag {
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+.about-event h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 38px;
+
+    margin: 18px 0;
+}
+
+.about-event h2 span {
+    color: #00d4ff;
+}
+
+.about-event p {
+    color: #8995a9;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+/* JOURNEY */
+
+.journey {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.journey-card {
+    padding: 30px;
+
+    border: 1px solid rgba(0, 212, 255, 0.15);
+
+    border-radius: 15px;
+
+    background: #0a0f21;
+
+    transition: 0.3s;
+}
+
+.journey-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00d4ff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+.journey-card span {
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 25px;
+}
+
+.journey-card h3 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 18px;
+
+    margin: 15px 0 10px;
+}
+
+.journey-card p {
+    color: #8995a9;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .event-details {
+        padding-top: 40px;
+    }
+
+    .event-hero {
+        padding: 40px 25px;
+    }
+
+    .event-meta {
+        flex-direction: column;
+    }
+
+    .event-meta div {
+        width: 100%;
+    }
+
+    .journey {
+        grid-template-columns: 1fr;
+    }
+}

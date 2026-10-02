@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Explore Events</title>
+
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NEX<span>ORA</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html" class="active">
+                Events
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="events-header">
+
+        <p class="page-tag">
+            NEXORA EVENT UNIVERSE
+        </p>
+
+        <h1>
+            EXPLORE
+            <span>EVENTS</span>
+        </h1>
+
+        <p class="description">
+            Discover competitions, workshops,
+            cultural events and experiences.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="event-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search events..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Technical">
+                Technical
+            </option>
+
+            <option value="Cultural">
+                Cultural
+            </option>
+
+            <option value="Sports">
+                Sports
+            </option>
+
+            <option value="Workshop">
+                Workshop
+            </option>
+
+            <option value="Hackathon">
+                Hackathon
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- EVENTS -->
+
+    <main class="events-container">
+
+        <!-- EVENT 1 -->
+
+        <div class="event-card"
+             data-category="Technical">
+
+            <div class="event-number">
+                01
+            </div>
+
+            <span class="event-category">
+                TECHNICAL
+            </span>
+
+            <h2>
+                Future Tech 2026
+            </h2>
+
+            <p>
+                Explore the latest technology,
+                innovation and future ideas.
+            </p>
+
+            <div class="event-info">
+                📅 October 2026
+                <br>
+                📍 Villupuram
+            </div>
+
+            <button
+                onclick="viewEvent('Future Tech 2026')">
+                View Details →
+            </button>
+
+        </div>
+
+
+        <!-- EVENT 2 -->
+
+        <div class="event-card"
+             data-category="Cultural">
+
+            <div class="event-number">
+                02
+            </div>
+
+            <span class="event-category">
+                CULTURAL
+            </span>
+
+            <h2>
+                Dance Fest 2026
+            </h2>
+
+            <p>
+                Celebrate creativity, music,
+                dance and cultural talent.
+            </p>
+
+            <div class="event-info">
+                📅 October 2026
+                <br>
+                📍 Villupuram
+            </div>
+
+            <button
+                onclick="viewEvent('Dance Fest 2026')">
+                View Details →
+            </button>
+
+        </div>
+
+
+        <!-- EVENT 3 -->
+
+        <div class="event-card"
+             data-category="Sports">
+
+            <div class="event-number">
+                03
+            </div>
+
+            <span class="event-category">
+                SPORTS
+            </span>
+
+            <h2>
+                Inter College Football
+            </h2>
+
+            <p>
+                Compete with teams and experience
+                the energy of college sports.
+            </p>
+
+            <div class="event-info">
+                📅 October 2026
+                <br>
+                📍 Chennai
+            </div>
+
+            <button
+                onclick="viewEvent('Inter College Football')">
+                View Details →
+            </button>
+
+        </div>
+
+
+        <!-- EVENT 4 -->
+
+        <div class="event-card"
+             data-category="Workshop">
+
+            <div class="event-number">
+                04
+            </div>
+
+            <span class="event-category">
+                WORKSHOP
+            </span>
+
+            <h2>
+                Web Development Workshop
+            </h2>
+
+            <p>
+                Learn modern web development
+                through practical projects.
+            </p>
+
+            <div class="event-info">
+                📅 November 2026
+                <br>
+                📍 Puducherry
+            </div>
+
+            <button
+                onclick="viewEvent('Web Development Workshop')">
+                View Details →
+            </button>
+
+        </div>
+
+
+        <!-- EVENT 5 -->
+
+        <div class="event-card"
+             data-category="Hackathon">
+
+            <div class="event-number">
+                05
+            </div>
+
+            <span class="event-category">
+                HACKATHON
+            </span>
+
+            <h2>
+                Hackathon 2026
+            </h2>
+
+            <p>
+                Build innovative solutions and
+                turn your ideas into reality.
+            </p>
+
+            <div class="event-info">
+                📅 December 2026
+                <br>
+                📍 Chennai
+            </div>
+
+            <button
+                onclick="viewEvent('Hackathon 2026')">
+                View Details →
+            </button>
+
+        </div>
+
+
+        <!-- EVENT 6 -->
+
+        <div class="event-card"
+             data-category="Technical">
+
+            <div class="event-number">
+                06
+            </div>
+
+            <span class="event-category">
+                TECHNICAL
+            </span>
+
+            <h2>
+                AI & ML Workshop
+            </h2>
+
+            <p>
+                Discover artificial intelligence
+                and machine learning concepts.
+            </p>
+
+            <div class="event-info">
+                📅 December 2026
+                <br>
+                📍 Puducherry
+            </div>
+
+            <button
+                onclick="viewEvent('AI & ML Workshop')">
+                View Details →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="events.js"></script>
+
+</body>
+
+</html>

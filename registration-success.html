@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Digital Event Pass</title>
+
+    <link rel="stylesheet"
+          href="registration-success.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NEX<span>ORA</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PASS -->
+
+    <main class="pass-container">
+
+
+        <div class="pass-card">
+
+
+            <!-- HEADER -->
+
+            <div class="pass-header">
+
+                <span>
+                    NEXORA DIGITAL PASS
+                </span>
+
+                <h1>
+                    EVENT
+                    <strong>ACCESS</strong>
+                </h1>
+
+                <p>
+                    Your registration has been confirmed.
+                </p>
+
+            </div>
+
+
+            <!-- REGISTRATION ID -->
+
+            <div class="registration-id">
+
+                <small>
+                    REGISTRATION ID
+                </small>
+
+                <strong id="registrationId">
+                    NX-000000
+                </strong>
+
+            </div>
+
+
+            <!-- USER DETAILS -->
+
+            <div class="pass-details">
+
+
+                <div class="detail-item">
+
+                    <span>
+                        NAME
+                    </span>
+
+                    <strong id="passName">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span>
+                        EVENT
+                    </span>
+
+                    <strong id="passEvent">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span>
+                        COLLEGE
+                    </span>
+
+                    <strong id="passCollege">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span>
+                        DEPARTMENT
+                    </span>
+
+                    <strong id="passDepartment">
+                        —
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- QR CODE -->
+
+            <div class="qr-section">
+
+                <div class="qr-box">
+
+                    <canvas id="qrCode"></canvas>
+
+                </div>
+
+                <p>
+                    SCAN AT EVENT ENTRY
+                </p>
+
+            </div>
+
+
+            <!-- ACTION -->
+
+            <a href="dashboard.html"
+               class="dashboard-btn">
+
+                Go to Dashboard →
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- QR CODE LIBRARY -->
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js">
+    </script>
+
+    <script src="registration-success.js">
+    </script>
+
+</body>
+
+</html>

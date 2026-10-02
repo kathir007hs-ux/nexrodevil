@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 50% 60%,
+            rgba(0, 132, 255, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #020711,
+            #03142d 55%,
+            #061d42
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 45px;
+
+    border-bottom: 1px solid rgba(0, 174, 255, 0.08);
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #f2f2f2;
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.logo span {
+    color: #18d8ff;
+
+    text-shadow:
+        0 0 12px #00d9ff;
+}
+
+
+/* Login link */
+
+.home-link {
+    color: #8c9db7;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    color: #00d9ff;
+
+    text-shadow:
+        0 0 10px #00d9ff;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.signup-section {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.signup-card {
+    width: 570px;
+
+    max-width: 100%;
+
+    padding: 42px 48px 38px;
+
+    background:
+        rgba(4, 22, 48, 0.48);
+
+    border: 1px solid rgba(54, 171, 255, 0.25);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 35px rgba(0, 113, 255, 0.18),
+        inset 0 0 35px rgba(0, 128, 255, 0.03);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.welcome {
+    text-align: center;
+
+    color: #00d9ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+    text-shadow:
+        0 0 10px rgba(0, 217, 255, 0.7);
+}
+
+
+h1 {
+    text-align: center;
+
+    font-size: 36px;
+
+    letter-spacing: 1px;
+
+    color: #f4e8c0;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 10px rgba(255, 239, 190, 0.15);
+}
+
+h1 span {
+    color: #13d9ff;
+
+    text-shadow:
+        0 0 12px rgba(0, 217, 255, 0.7);
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #9baac0;
+
+    font-size: 15px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-group {
+    margin-bottom: 23px;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #00d9ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 8px rgba(0, 217, 255, 0.45);
+}
+
+
+input {
+    width: 100%;
+
+    height: 58px;
+
+    padding: 0 17px;
+
+    background:
+        rgba(5, 38, 75, 0.55);
+
+    border: 1px solid rgba(0, 151, 255, 0.35);
+
+    border-radius: 9px;
+
+    outline: none;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+    box-shadow:
+        inset 0 0 12px rgba(0, 100, 255, 0.05);
+}
+
+input::placeholder {
+    color: #71829d;
+}
+
+input:hover {
+    border-color: rgba(0, 184, 255, 0.65);
+}
+
+input:focus {
+    border-color: #00cfff;
+
+    background:
+        rgba(4, 48, 91, 0.65);
+
+    box-shadow:
+        0 0 12px rgba(0, 195, 255, 0.25),
+        inset 0 0 10px rgba(0, 195, 255, 0.05);
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 55px;
+}
+
+.eye-btn {
+    position: absolute;
+
+    right: 13px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #7391b5;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.eye-btn:hover {
+    color: #00d9ff;
+
+    text-shadow:
+        0 0 10px #00d9ff;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.signup-btn {
+    width: 100%;
+
+    height: 56px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #20bfff,
+            #21e1d4
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 20px rgba(0, 213, 255, 0.35);
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 30px rgba(0, 213, 255, 0.65);
+}
+
+.signup-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 27px;
+
+    color: #8495ad;
+
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #16d8ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 4px;
+}
+
+.login-text a:hover {
+    text-shadow:
+        0 0 10px #00d9ff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .signup-section {
+        padding: 25px 15px;
+    }
+
+    .signup-card {
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+}

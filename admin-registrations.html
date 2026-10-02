@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Registrations</title>
+
+    <link rel="stylesheet"
+          href="admin-registrations.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="admin-navbar">
+
+        <div class="admin-logo">
+
+            NEX<span>ORA</span>
+
+            <small>
+                ADMIN CONTROL
+            </small>
+
+        </div>
+
+
+        <div class="admin-nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-events.html">
+                Events
+            </a>
+
+            <a href="admin-registrations.html"
+               class="active">
+                Registrations
+            </a>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MAIN -->
+
+    <main class="admin-container">
+
+
+        <!-- HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p>
+                    NEXORA CONTROL CENTER
+                </p>
+
+                <h1>
+                    EVENT
+                    <span>REGISTRATIONS</span>
+                </h1>
+
+                <p class="description">
+                    View and manage registered
+                    event participants.
+                </p>
+
+            </div>
+
+
+            <div class="registration-counter">
+
+                <span>
+                    TOTAL PARTICIPANTS
+                </span>
+
+                <strong id="registrationCount">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search participant, email, college..."
+                >
+
+            </div>
+
+
+            <select id="eventFilter">
+
+                <option value="all">
+                    All Events
+                </option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- REGISTRATIONS -->
+
+        <section class="registration-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p>
+                        PARTICIPANT DATABASE
+                    </p>
+
+                    <h2>
+                        REGISTERED
+                        <span>USERS</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="registrationContainer"
+                class="registration-container">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="admin-registrations.js"></script>
+
+</body>
+
+</html>

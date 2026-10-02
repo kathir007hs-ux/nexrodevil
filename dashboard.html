@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Dashboard</title>
+
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NEX<span>ORA</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard-container">
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome-section">
+
+            <p class="dashboard-tag">
+                NEXORA USER DASHBOARD
+            </p>
+
+            <h1>
+                WELCOME,
+                <span id="userName">
+                    USER
+                </span>
+            </h1>
+
+            <p>
+                Manage your registrations,
+                event passes and upcoming experiences.
+            </p>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <span>
+                    REGISTERED EVENTS
+                </span>
+
+                <strong id="eventCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    ACTIVE PASS
+                </span>
+
+                <strong>
+                    YES
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    STATUS
+                </span>
+
+                <strong>
+                    ACTIVE
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- REGISTRATION -->
+
+        <section class="registration-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="dashboard-tag">
+                        MY REGISTRATION
+                    </p>
+
+                    <h2>
+                        EVENT ACCESS
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="registration-card">
+
+
+                <div class="registration-info">
+
+
+                    <div>
+
+                        <span>
+                            REGISTRATION ID
+                        </span>
+
+                        <strong id="registrationId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            EVENT
+                        </span>
+
+                        <strong id="eventName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            COLLEGE
+                        </span>
+
+                        <strong id="collegeName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            DEPARTMENT
+                        </span>
+
+                        <strong id="departmentName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <a href="registration-success.html"
+                   class="pass-btn">
+
+                    View Digital Pass →
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPLORE -->
+
+        <section class="explore-section">
+
+            <p class="dashboard-tag">
+                DISCOVER MORE
+            </p>
+
+            <h2>
+                FIND YOUR NEXT
+                <span>EXPERIENCE</span>
+            </h2>
+
+            <p>
+                Explore upcoming events and discover
+                something new.
+            </p>
+
+            <a href="events.html"
+               class="explore-btn">
+
+                Explore Events →
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

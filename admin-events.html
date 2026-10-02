@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Event Management</title>
+
+    <link rel="stylesheet"
+          href="admin-events.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="admin-navbar">
+
+        <div class="admin-logo">
+
+            NEX<span>ORA</span>
+
+            <small>
+                ADMIN CONTROL
+            </small>
+
+        </div>
+
+        <div class="admin-nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-events.html"
+               class="active">
+                Events
+            </a>
+
+            <a href="events.html">
+                View Site
+            </a>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <main class="admin-container">
+
+
+        <!-- HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p>
+                    NEXORA CONTROL CENTER
+                </p>
+
+                <h1>
+                    EVENT
+                    <span>MANAGEMENT</span>
+                </h1>
+
+                <p class="description">
+                    Create and manage events
+                    available on the NEXORA platform.
+                </p>
+
+            </div>
+
+
+            <button
+                id="addEventBtn"
+                class="add-event-btn">
+
+                + ADD NEW EVENT
+
+            </button>
+
+        </section>
+
+
+        <!-- EVENT FORM -->
+
+        <section
+            id="eventFormSection"
+            class="event-form-section hidden">
+
+            <div class="form-header">
+
+                <div>
+
+                    <p>
+                        EVENT CONFIGURATION
+                    </p>
+
+                    <h2>
+                        CREATE
+                        <span>EVENT</span>
+                    </h2>
+
+                </div>
+
+                <button
+                    id="closeFormBtn"
+                    class="close-btn">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <form id="eventForm">
+
+
+                <input
+                    type="hidden"
+                    id="editEventId"
+                >
+
+
+                <div class="form-grid">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            EVENT NAME
+                        </label>
+
+                        <input
+                            type="text"
+                            id="eventName"
+                            placeholder="Enter event name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            CATEGORY
+                        </label>
+
+                        <select
+                            id="eventCategory"
+                            required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Technical">
+                                Technical
+                            </option>
+
+                            <option value="Cultural">
+                                Cultural
+                            </option>
+
+                            <option value="Sports">
+                                Sports
+                            </option>
+
+                            <option value="Workshop">
+                                Workshop
+                            </option>
+
+                            <option value="Hackathon">
+                                Hackathon
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label>
+                            DESCRIPTION
+                        </label>
+
+                        <textarea
+                            id="eventDescription"
+                            placeholder="Enter event description"
+                            rows="4"
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            DATE
+                        </label>
+
+                        <input
+                            type="date"
+                            id="eventDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            TIME
+                        </label>
+
+                        <input
+                            type="time"
+                            id="eventTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            LOCATION
+                        </label>
+
+                        <input
+                            type="text"
+                            id="eventLocation"
+                            placeholder="Event location"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            MAX PARTICIPANTS
+                        </label>
+
+                        <input
+                            type="number"
+                            id="eventCapacity"
+                            placeholder="100"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        id="cancelBtn"
+                        class="cancel-btn">
+
+                        CANCEL
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="save-btn">
+
+                        SAVE EVENT →
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- EVENTS -->
+
+        <section class="events-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p>
+                        EVENT DATABASE
+                    </p>
+
+                    <h2>
+                        ALL
+                        <span>EVENTS</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="event-count">
+
+                    EVENTS:
+                    <strong id="eventCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="eventsContainer"
+                class="events-container">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="admin-events.js"></script>
+
+</body>
+
+</html>

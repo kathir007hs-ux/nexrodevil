@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #aeb9ca;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+
+/* LOGIN CONTAINER */
+
+.login-container {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    background: #0066ff;
+
+    filter: blur(180px);
+
+    opacity: 0.15;
+
+    top: 15%;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* LOGIN CARD */
+
+.login-card {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 450px;
+
+    padding: 45px 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0, 212, 255, 0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            #0b1024,
+            #070b19
+        );
+
+    box-shadow:
+        0 20px 70px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(0, 212, 255, 0.06);
+}
+
+
+/* HEADER */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.login-tag {
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.login-header h1 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.login-header h1 span {
+    color: #00d4ff;
+
+    text-shadow:
+        0 0 15px rgba(0, 212, 255, 0.45);
+}
+
+.login-header > p:last-child {
+    color: #8995a9;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* INPUT */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #00d4ff;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(0, 212, 255, 0.15);
+
+    outline: none;
+
+    background: #050816;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #566174;
+}
+
+.input-group input:focus {
+    border-color: #00d4ff;
+
+    box-shadow:
+        0 0 15px rgba(0, 212, 255, 0.12);
+}
+
+
+/* LOGIN BUTTON */
+
+.login-card button {
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #00d4ff
+        );
+
+    color: white;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 30px rgba(0, 212, 255, 0.4);
+}
+
+
+/* SIGNUP LINK */
+
+.signup-link {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #8995a9;
+
+    font-size: 12px;
+}
+
+.signup-link a {
+    color: #00d4ff;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .login-card {
+        padding: 35px 25px;
+    }
+
+    .login-header h1 {
+        font-size: 25px;
+    }
+
+}

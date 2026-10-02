@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Registration</title>
+
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NEX<span>ORA</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- REGISTRATION -->
+
+    <main class="register-container">
+
+
+        <div class="register-card">
+
+
+            <div class="register-header">
+
+                <span>
+                    NEXORA REGISTRATION
+                </span>
+
+                <h1>
+                    JOIN THE
+                    <strong>EVENT</strong>
+                </h1>
+
+                <p>
+                    Complete your details to reserve
+                    your place.
+                </p>
+
+            </div>
+
+
+            <form id="registrationForm">
+
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- COLLEGE -->
+
+                <div class="input-group">
+
+                    <label for="college">
+                        College
+                    </label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        placeholder="Enter your college"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DEPARTMENT -->
+
+                <div class="input-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Example: BCA"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EVENT -->
+
+                <div class="input-group">
+
+                    <label for="event">
+                        Select Event
+                    </label>
+
+                    <select id="event" required>
+
+                        <option value="">
+                            Select an event
+                        </option>
+
+                        <option value="Future Tech 2026">
+                            Future Tech 2026
+                        </option>
+
+                        <option value="Dance Fest 2026">
+                            Dance Fest 2026
+                        </option>
+
+                        <option value="Inter College Football">
+                            Inter College Football
+                        </option>
+
+                        <option value="Web Development Workshop">
+                            Web Development Workshop
+                        </option>
+
+                        <option value="Hackathon 2026">
+                            Hackathon 2026
+                        </option>
+
+                        <option value="AI & ML Workshop">
+                            AI & ML Workshop
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="register-submit">
+
+                    Complete Registration →
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

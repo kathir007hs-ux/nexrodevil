@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="admin-dashboard.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="admin-navbar">
+
+        <div class="admin-logo">
+
+            NEX<span>ORA</span>
+
+            <small>
+                ADMIN CONTROL
+            </small>
+
+        </div>
+
+
+        <div class="admin-nav-links">
+
+            <a href="admin-dashboard.html"
+               class="active">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                View Site
+            </a>
+
+            <button
+                id="adminLogoutBtn"
+                class="logout-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MAIN -->
+
+    <main class="admin-container">
+
+
+        <!-- HEADER -->
+
+        <section class="admin-header">
+
+            <div>
+
+                <p class="admin-tag">
+                    NEXORA CONTROL CENTER
+                </p>
+
+                <h1>
+                    ADMIN
+                    <span>DASHBOARD</span>
+                </h1>
+
+                <p class="admin-description">
+                    Manage events, registrations,
+                    attendance and platform activity.
+                </p>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+        </section>
+
+
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    ◈
+                </div>
+
+                <span>
+                    TOTAL EVENTS
+                </span>
+
+                <strong id="totalEvents">
+                    6
+                </strong>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    ◎
+                </div>
+
+                <span>
+                    REGISTRATIONS
+                </span>
+
+                <strong id="totalRegistrations">
+                    0
+                </strong>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    ◉
+                </div>
+
+                <span>
+                    ATTENDANCE
+                </span>
+
+                <strong id="totalAttendance">
+                    0
+                </strong>
+
+            </div>
+
+
+
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    ✦
+                </div>
+
+                <span>
+                    ACTIVE USERS
+                </span>
+
+                <strong id="activeUsers">
+                    0
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- MANAGEMENT -->
+
+        <section class="management-section">
+
+
+            <div class="section-title">
+
+                <p>
+                    MANAGEMENT
+                </p>
+
+                <h2>
+                    CONTROL
+                    <span>MODULES</span>
+                </h2>
+
+            </div>
+
+
+
+            <div class="module-grid">
+
+
+                <!-- EVENTS -->
+
+                <div class="module-card">
+
+                    <div class="module-number">
+                        01
+                    </div>
+
+                    <div class="module-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        EVENT MANAGEMENT
+                    </h3>
+
+                    <p>
+                        Create, edit and manage
+                        NEXORA events.
+                    </p>
+
+                    <button
+                        onclick="openModule('events')">
+
+                        MANAGE EVENTS →
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- REGISTRATIONS -->
+
+                <div class="module-card">
+
+                    <div class="module-number">
+                        02
+                    </div>
+
+                    <div class="module-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        REGISTRATIONS
+                    </h3>
+
+                    <p>
+                        View participants and
+                        registration details.
+                    </p>
+
+                    <button
+                        onclick="openModule('registrations')">
+
+                        VIEW REGISTRATIONS →
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- ATTENDANCE -->
+
+                <div class="module-card">
+
+                    <div class="module-number">
+                        03
+                    </div>
+
+                    <div class="module-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        ATTENDANCE
+                    </h3>
+
+                    <p>
+                        Track event attendance
+                        and participant check-ins.
+                    </p>
+
+                    <button
+                        onclick="openModule('attendance')">
+
+                        MANAGE ATTENDANCE →
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- ANALYTICS -->
+
+                <div class="module-card">
+
+                    <div class="module-number">
+                        04
+                    </div>
+
+                    <div class="module-icon">
+                        ↗
+                    </div>
+
+                    <h3>
+                        EVENT ANALYTICS
+                    </h3>
+
+                    <p>
+                        Monitor registrations,
+                        attendance and activity.
+                    </p>
+
+                    <button
+                        onclick="openModule('analytics')">
+
+                        VIEW ANALYTICS →
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT ACTIVITY -->
+
+        <section class="activity-section">
+
+
+            <div class="section-title">
+
+                <p>
+                    SYSTEM ACTIVITY
+                </p>
+
+                <h2>
+                    RECENT
+                    <span>ACTIVITY</span>
+                </h2>
+
+            </div>
+
+
+            <div
+                id="activityContainer"
+                class="activity-container">
+
+                <div class="empty-activity">
+
+                    <span>
+                        ◌
+                    </span>
+
+                    <p>
+                        No recent activity
+                    </p>
+
+                    <small>
+                        Platform activity will appear here.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ADMIN PROFILE -->
+
+        <section class="admin-profile">
+
+
+            <div>
+
+                <p>
+                    CURRENT ADMINISTRATOR
+                </p>
+
+                <h3 id="adminName">
+                    NEXORA Administrator
+                </h3>
+
+                <span id="adminEmail">
+                    admin@nexora.com
+                </span>
+
+            </div>
+
+
+            <div class="admin-access">
+
+                <span class="access-dot"></span>
+
+                ADMIN ACCESS ACTIVE
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="admin-dashboard.js"></script>
+
+</body>
+
+</html>
