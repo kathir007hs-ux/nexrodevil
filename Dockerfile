@@ -1,11 +1,12 @@
-FROM eclipse-temurin:25-jdk
+FROM maven:3.9.11-eclipse-temurin-25
 
 WORKDIR /app
 
-COPY . .
+COPY pom.xml .
 
-RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
+COPY src ./src
+
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
